@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "no-chat-delay",
+	"version": "${version}",
+	"name": "No Chat Delay",
+	"description": "Remove delay between receiving a chat packet and rendering it on screen",
+	"authors": [
+		"Nebuli_"
+	],
+	"contact": {
+		"homepage": "https://modrinth.com/project/no-chat-delay",
+		"sources": "https://github.com/Nebulii/No-Chat-Delay/"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/no-chat-delay/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"nebuli.no_chat_delay.NoChatDelay"
+		]
+	},
+	"mixins": [
+		"no-chat-delay.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.0",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
